@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Apex FLUX Gym – Premium fitness training in Ejipura, Bengaluru. Transform your body, elevate your life." />
+  <meta name="keywords" content="gym Ejipura, fitness Bengaluru, personal training, weight loss, strength training" />
+  <meta property="og:title" content="Apex FLUX Gym – Premium Fitness Training" />
+  <meta property="og:description" content="Transform your body and elevate your life at Apex FLUX Gym, Ejipura." />
+  <title>Apex FLUX Gym – Transform. Elevate. Dominate.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== SPLASH SCREEN ===== -->
+  <div id="splash" aria-hidden="true">
+    <div class="splash-bg"></div>
+    <div class="splash-logo-wrap">
+      <div class="splash-logo">
+        <div class="splash-logo-left">
+          <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <text x="10" y="65" class="logo-text-main">APEX</text>
+          </svg>
+        </div>
+        <div class="splash-logo-bolt">
+          <svg viewBox="0 0 40 80" xmlns="http://www.w3.org/2000/svg" class="bolt-svg">
+            <polygon points="28,0 12,38 22,38 12,80 34,32 22,32 34,0" fill="url(#boltGrad)" class="bolt-poly"/>
+            <defs>
+              <linearGradient id="boltGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#FF3A1A"/>
+                <stop offset="100%" stop-color="#FF8C00"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="splash-logo-right">
+          <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <text x="10" y="65" class="logo-text-main logo-text-FLUX">FLUX</text>
+          </svg>
+        </div>
+      </div>
+      <div class="splash-tagline">GYM</div>
+      <div class="splash-glow"></div>
+    </div>
+  </div>
+
+  <!-- ===== WATERMARK BOLT ===== -->
+  <div class="watermark" aria-hidden="true">
+    <svg viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="140,0 60,190 110,190 60,400 170,160 110,160 170,0" fill="url(#wmGrad)"/>
+      <defs>
+        <linearGradient id="wmGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FF3A1A"/>
+          <stop offset="100%" stop-color="#7B2FFF"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="Apex FLUX Gym Home">
+        <svg viewBox="0 0 320 50" xmlns="http://www.w3.org/2000/svg" class="nav-logo-svg">
+          <text x="0" y="40" class="nav-logo-text">APEX</text>
+          <polygon points="182,2 170,24 178,24 168,48 190,22 180,22 192,2" fill="url(#navBolt)"/>
+          <text x="196" y="40" class="nav-logo-text nav-logo-FLUX">FLUX</text>
+          <defs>
+            <linearGradient id="navBolt" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#FF3A1A"/>
+              <stop offset="100%" stop-color="#FF8C00"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="nav-gym-label">GYM</span>
+      </a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#programs" class="nav-link">Programs</a></li>
+        <li><a href="#membership" class="nav-link">Memberships</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#membership" class="nav-cta btn-primary">Join Now</a></li>
+        <li>
+          <a href="https://www.instagram.com/apex.FLUX.gym/" target="_blank" rel="noopener" class="nav-cta btn-outline-insta" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Instagram
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-grid-lines"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>
+        Premium Fitness · Ejipura · Bengaluru
+      </div>
+      <h1 class="hero-headline reveal-up delay-1">
+        Transform Your Body.<br/>
+        <span class="headline-accent">Elevate Your Life.</span>
+      </h1>
+      <p class="hero-sub reveal-up delay-2">Premium Fitness Training in Ejipura</p>
+      <div class="hero-ctas reveal-up delay-3">
+        <a href="#membership" class="btn-primary btn-lg">Join Now</a>
+        <a href="#programs" class="btn-ghost btn-lg">Explore Plans</a>
+      </div>
+      <div class="hero-stats reveal-up delay-4">
+        <div class="hero-stat">
+          <span class="stat-val">4.8★</span>
+          <span class="stat-lbl">Google Rating</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="hero-stat">
+          <span class="stat-val">26+</span>
+          <span class="stat-lbl">Reviews</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="hero-stat">
+          <span class="stat-val">11+</span>
+          <span class="stat-lbl">Programs</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="hero-stat">
+          <span class="stat-val">Pro</span>
+          <span class="stat-lbl">Personal Training</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about section-pad">
+    <div class="container">
+      <div class="section-label reveal-up">Our Story</div>
+      <h2 class="section-title reveal-up">Built for Transformation.<br/><span class="accent-text">Driven by Community.</span></h2>
+      <div class="about-grid">
+        <div class="about-image-block reveal-left">
+          <div class="about-img-frame">
+            <img src="images/gym1.jpg" alt="Apex FLUX Gym interior" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('img-placeholder')" />
+            <div class="img-glow"></div>
+          </div>
+          <div class="about-img-accent">
+            <span>EST. 2022</span>
+          </div>
+        </div>
+        <div class="about-text-block reveal-right">
+          <p class="about-lead">At Apex FLUX Gym, we believe that transformation is not just physical — it's a complete lifestyle upgrade.</p>
+          <p class="about-body">Located in the heart of Ejipura, Bengaluru, our gym was born out of a single powerful idea: to create a space where discipline meets passion. We combined world-class equipment with a culture of positivity, pushing every member to unlock the best version of themselves.</p>
+          <p class="about-body">Our certified trainers don't just count reps — they invest in your journey. Whether you're a beginner stepping into the gym for the first time or an athlete chasing peak performance, Apex FLUX is your home.</p>
+          <div class="about-pillars">
+            <div class="pillar"><span class="pillar-icon">⚡</span>Discipline</div>
+            <div class="pillar"><span class="pillar-icon">🔥</span>Consistency</div>
+            <div class="pillar"><span class="pillar-icon">🏆</span>Transformation</div>
+            <div class="pillar"><span class="pillar-icon">🤝</span>Community</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-grid about-grid-reverse mt-80">
+        <div class="about-text-block reveal-left">
+          <h3 class="about-subtitle">Positive Vibes. Real Results.</h3>
+          <p class="about-body">The Apex FLUX community is what truly sets us apart. Walk in on any given morning and you'll feel the energy — members encouraging each other, trainers celebrating milestones, and a collective determination to grow stronger every day.</p>
+          <p class="about-body">We've designed every corner of our 3rd-floor facility to inspire. From our modern strength zone to functional training bays, every square foot is optimized for performance. And with our exclusive steam room, recovery is as much a priority as the workout itself.</p>
+          <a href="#programs" class="btn-primary mt-20">Explore Programs</a>
+        </div>
+        <div class="about-image-block reveal-right">
+          <div class="about-img-frame">
+            <img src="images/gym2.jpg" alt="Apex FLUX Gym training" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('img-placeholder')" />
+            <div class="img-glow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="why section-pad">
+    <div class="container">
+      <div class="section-label reveal-up">Why Apex FLUX</div>
+      <h2 class="section-title reveal-up">The Apex Advantage</h2>
+      <div class="why-grid">
+        <div class="why-card glass reveal-up" data-delay="0">
+          <div class="why-icon">🏋️</div>
+          <h3>Modern Equipment</h3>
+          <p>State-of-the-art machines, free weights, and functional training gear — all maintained to peak condition.</p>
+        </div>
+        <div class="why-card glass reveal-up" data-delay="100">
+          <div class="why-icon">👨‍🏫</div>
+          <h3>Expert Trainers</h3>
+          <p>Certified coaches who bring science-backed programming and genuine passion for your success.</p>
+        </div>
+        <div class="why-card glass reveal-up" data-delay="200">
+          <div class="why-icon">🔥</div>
+          <h3>Weight Loss Programs</h3>
+          <p>Structured, result-driven protocols that combine nutrition and training for real fat-loss transformation.</p>
+        </div>
+        <div class="why-card glass reveal-up" data-delay="300">
+          <div class="why-icon">💪</div>
+          <h3>Strength Training</h3>
+          <p>Progressive overload principles designed to build serious, functional, and aesthetic strength.</p>
+        </div>
+        <div class="why-card glass reveal-up" data-delay="400">
+          <div class="why-icon">⚡</div>
+          <h3>Functional Fitness</h3>
+          <p>Movement-focused training that builds real-world athleticism, mobility, and explosive power.</p>
+        </div>
+        <div class="why-card glass reveal-up" data-delay="500">
+          <div class="why-icon">🤝</div>
+          <h3>Positive Community</h3>
+          <p>A tribe of motivated individuals who push each other, celebrate wins, and show up every single day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAMS / SERVICES ===== -->
+  <section id="programs" class="programs section-pad">
+    <div class="container">
+      <div class="section-label reveal-up">What We Offer</div>
+      <h2 class="section-title reveal-up">Elite Training Programs</h2>
+      <div class="programs-grid">
+
+        <div class="program-card glass reveal-up" data-delay="0">
+          <div class="program-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg1)" stroke-width="1.5"/><path d="M10 20h4M26 20h4M14 20a6 6 0 0012 0M14 20a6 6 0 0112 0" stroke="url(#pg1)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="pg1" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#FF3A1A"/><stop offset="1" stop-color="#7B2FFF"/></linearGradient></defs></svg>
+          </div>
+          <h3>Personal Training</h3>
+          <p>One-on-one sessions designed around your specific goals, body type, and fitness level.</p>
+          <span class="program-tag">Premium</span>
+        </div>
+
+        <div class="program-card glass reveal-up" data-delay="80">
+          <div class="program-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg2)" stroke-width="1.5"/><path d="M12 28l8-16 8 16" stroke="url(#pg2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="pg2" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#FF3A1A"/><stop offset="1" stop-color="#FF8C00"/></linearGradient></defs></svg>
+          </div>
+          <h3>Executive Gym</h3>
+          <p>Private, distraction-free training space for professionals who value time and results.</p>
+          <span class="program-tag">Exclusive</span>
+        </div>
+
+        <div class="program-card glass reveal-up" data-delay="160">
+          <div class="program-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg3)" stroke-width="1.5"/><path d="M14 20c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6-6-2.7-6-6z" stroke="url(#pg3)" stroke-width="1.5"/><path d="M20 14V10M20 30v-4" stroke="url(#pg3)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="pg3" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#7B2FFF"/><stop offset="1" stop-color="#FF3A1A"/></linearGradient></defs></svg>
+          </div>
+          <h3>Zumba Dance</h3>
+          <p>High-energy dance fitness that burns calories while keeping the fun alive.</p>
+          <span class="program-tag">Fun</span>
+        </div>
+
+        <div class="program-card glass reveal-up" data-delay="240">
+          <div class="program-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg4)" stroke-width="1.5"/><rect x="12" y="17" width="16" height="6" rx="3" stroke="url(#pg4)" stroke-width="1.5"/><defs><linearGradient id="pg4" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#FF3A1A"/><stop offset="1" stop-color="#7B2FFF"/></linearGradient></defs></svg>
+          </div>
+          <h3>Strength Training</h3>
+          <p>Periodized programs to develop raw, functional, and aesthetically powerful physiques.</p>
+          <span class="program-tag">Core</span>
+        </div>
+
+        <div class="program-card glass reveal-up" data-delay="320">
+          <div class="program-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg5)" stroke-width="1.5"/><path d="M15 25l5-10 5 10" stroke="url(#pg5)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="pg5" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#FF8C00"/><stop offset="1" stop-color="#FF3A1A"/></linearGradient></defs></svg>
+          </div>
+          <h3>Weight Loss</h3>
+          <p>Comprehensive fat-loss program combining cardio, nutrition coaching, and accountability.</p>
+          <span class="program-tag">Popular</span>
+        </div>
+
+        <div class="program-card glass reveal-up" data-delay="400">
+          <div class="program-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg6)" stroke-width="1.5"/><circle cx="20" cy="24" r="5" stroke="url(#pg6)" stroke-width="1.5"/><path d="M20 19v-5" stroke="url(#pg6)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="pg6" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#7B2FFF"/><stop offset="1" stop-color="#FF8C00"/></linearGradient></defs></svg>
+          </div>
+          <h3>Kettlebell Training</h3>
+          <p>Dynamic kettlebell protocols that build grip strength, power, and total-body conditioning.</p>
+          <span class="program-tag">Functional</span>
+        </div>
+
+        <div class="program-card glass reveal-up" data-delay="480">
+          <div class="program-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg7)" stroke-width="1.5"/><path d="M15 20h10M20 15v10" stroke="url(#pg7)" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="pg7" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#FF3A1A"/><stop offset="1" stop-color="#FF8C00"/></linearGradient></defs></svg>
+          </div>
+          <h3>Six Pack Training</h3>
+          <p>Targeted core programs with nutrition protocols to achieve visible, defined abdominals.</p>
+          <span class="program-tag">Transformation</span>
+        </div>
+
+        <div class="program-card glass reveal-up" data-delay="560">
+          <div class="program-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg8)" stroke-width="1.5"/><polygon points="20,10 30,28 10,28" stroke="url(#pg8)" stroke-width="1.5" fill="none"/><defs><linearGradient id="pg8" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#7B2FFF"/><stop offset="1" stop-color="#FF3A1A"/></linearGradient></defs></svg>
+          </div>
+          <h3>CrossFit Workouts</h3>
+          <p>Varied, high-intensity functional movements that forge unmatched athletic conditioning.</p>
+          <span class="program-tag">Intensity</span>
+        </div>
+
+        <div class="program-card glass reveal-up" data-delay="640">
+          <div class="program-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg9)" stroke-width="1.5"/><path d="M16 26l-4-6 8-10 8 10-4 6" stroke="url(#pg9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="pg9" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#FF8C00"/><stop offset="1" stop-color="#7B2FFF"/></linearGradient></defs></svg>
+          </div>
+          <h3>Kick Boxing</h3>
+          <p>Combat-inspired cardio that builds speed, coordination, power, and incredible stamina.</p>
+          <span class="program-tag">Combat</span>
+        </div>
+
+        <div class="program-card glass reveal-up" data-delay="720">
+          <div class="program-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg10)" stroke-width="1.5"/><path d="M12 22h16M20 14v4" stroke="url(#pg10)" stroke-width="1.5" stroke-linecap="round"/><path d="M15 26h10" stroke="url(#pg10)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="pg10" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#FF3A1A"/><stop offset="1" stop-color="#7B2FFF"/></linearGradient></defs></svg>
+          </div>
+          <h3>Diet Planning</h3>
+          <p>Personalised nutrition strategies crafted to complement your training and accelerate results.</p>
+          <span class="program-tag">Nutrition</span>
+        </div>
+
+        <div class="program-card glass reveal-up" data-delay="800">
+          <div class="program-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg11)" stroke-width="1.5"/><path d="M14 20s0-6 6-6 6 6 6 6-1 6-6 6-6-6-6-6z" stroke="url(#pg11)" stroke-width="1.5"/><defs><linearGradient id="pg11" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#7B2FFF"/><stop offset="1" stop-color="#FF8C00"/></linearGradient></defs></svg>
+          </div>
+          <h3>Steam Room</h3>
+          <p>Premium post-workout recovery facility for deep muscle relaxation and detoxification.</p>
+          <span class="program-tag">Recovery</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MEMBERSHIP ===== -->
+  <section id="membership" class="membership section-pad">
+    <div class="container">
+      <div class="section-label reveal-up">Pricing</div>
+      <h2 class="section-title reveal-up">Choose Your Plan</h2>
+      <p class="section-subtitle reveal-up">Flexible memberships designed for every fitness journey</p>
+      <div class="pricing-grid">
+
+        <div class="pricing-card glass pricing-featured reveal-up" data-delay="150">
+          <div class="plan-badge-wrap"><span class="plan-badge">Most Popular</span></div>
+          <div class="plan-name">Pro</div>
+          <div class="plan-price">
+            <span class="price-currency">₹</span>
+            <span class="price-val">2,499</span>
+            <span class="price-period">/month</span>
+          </div>
+          <ul class="plan-features">
+            <li><span class="feat-check">✓</span> Everything in Starter</li>
+            <li><span class="feat-check">✓</span> 4 Personal Training Sessions</li>
+            <li><span class="feat-check">✓</span> Steam Room Access</li>
+            <li><span class="feat-check">✓</span> Group Classes (Zumba/Kickboxing)</li>
+            <li><span class="feat-check">✓</span> Diet Consultation</li>
+            <li><span class="feat-check">✓</span> Progress Tracking</li>
+            <li><span class="feat-x">✗</span> Unlimited PT Sessions</li>
+          </ul>
+          <a href="https://wa.me/917760287575?text=Hi%2C%20I%20am%20interested%20in%20the%20Pro%20Plan%20at%20Apex%20FLUX%20Gym." target="_blank" rel="noopener" class="btn-primary plan-btn">Join Pro</a>
+        </div>
+
+        <div class="pricing-card glass reveal-up" data-delay="300">
+          <div class="plan-badge-wrap"><span class="plan-badge plan-badge-elite">Elite</span></div>
+          <div class="plan-name">Elite</div>
+          <div class="plan-price">
+            <span class="price-currency">₹</span>
+            <span class="price-val">3,999</span>
+            <span class="price-period">/month</span>
+          </div>
+          <ul class="plan-features">
+            <li><span class="feat-check">✓</span> Everything in Pro</li>
+            <li><span class="feat-check">✓</span> Unlimited Personal Training</li>
+            <li><span class="feat-check">✓</span> Custom Diet Plan</li>
+            <li><span class="feat-check">✓</span> Executive Gym Access</li>
+            <li><span class="feat-check">✓</span> CrossFit & Kettlebell Programs</li>
+            <li><span class="feat-check">✓</span> Body Composition Analysis</li>
+            <li><span class="feat-check">✓</span> Priority Trainer Booking</li>
+          </ul>
+          <a href="https://wa.me/917760287575?text=Hi%2C%20I%20am%20interested%20in%20the%20Elite%20Plan%20at%20Apex%20FLUX%20Gym." target="_blank" rel="noopener" class="btn-outline plan-btn">Go Elite</a>
+        </div>
+
+      </div>
+      <p class="pricing-note reveal-up">* Prices are indicative. Contact us for the latest offers, quarterly & annual packages.</p>
+    </div>
+  </section>
+
+  <!-- ===== TRANSFORMATION STATS ===== -->
+  <section class="transform-section section-pad">
+    <div class="transform-overlay"></div>
+    <div class="container">
+      <div class="section-label reveal-up" style="color:#fff">Results</div>
+      <h2 class="section-title reveal-up" style="color:#fff">Numbers That Speak</h2>
+      <div class="counter-grid">
+        <div class="counter-item reveal-up" data-delay="0">
+          <span class="counter-val" data-target="1000">0</span><span class="counter-plus">+</span>
+          <div class="counter-lbl">Workouts Completed</div>
+        </div>
+        <div class="counter-item reveal-up" data-delay="150">
+          <span class="counter-val" data-target="500">0</span><span class="counter-plus">+</span>
+          <div class="counter-lbl">Transformations</div>
+        </div>
+        <div class="counter-item reveal-up" data-delay="300">
+          <span class="counter-val" data-target="48" data-decimal="true">0</span><span class="counter-unit">★</span>
+          <div class="counter-lbl">Member Satisfaction</div>
+        </div>
+        <div class="counter-item reveal-up" data-delay="450">
+          <span class="counter-val" data-target="11">0</span><span class="counter-plus">+</span>
+          <div class="counter-lbl">Training Programs</div>
+        </div>
+      </div>
+      <div class="transform-pillars">
+        <div class="tp-item reveal-up"><div class="tp-icon">⚡</div><div class="tp-label">Consistency</div></div>
+        <div class="tp-item reveal-up"><div class="tp-icon">📈</div><div class="tp-label">Progress</div></div>
+        <div class="tp-item reveal-up"><div class="tp-icon">🦾</div><div class="tp-label">Strength</div></div>
+        <div class="tp-item reveal-up"><div class="tp-icon">🔥</div><div class="tp-label">Confidence</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRAINERS ===== -->
+  <section class="trainers section-pad">
+    <div class="container">
+      <div class="section-label reveal-up">The Team</div>
+      <h2 class="section-title reveal-up">Meet Your Coaches</h2>
+      <div class="trainers-grid">
+        <div class="trainer-card glass reveal-up" data-delay="0">
+          <div class="trainer-photo">
+            <img src="images/trainer1.jpg" alt="Head Trainer" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('trainer-placeholder')" />
+            <div class="trainer-img-overlay"></div>
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name">Arjun S.</h3>
+            <span class="trainer-spec">Strength & Hypertrophy</span>
+            <span class="trainer-exp">6+ Years Experience</span>
+          </div>
+        </div>
+        <div class="trainer-card glass reveal-up" data-delay="150">
+          <div class="trainer-photo">
+            <img src="images/trainer2.jpg" alt="Fitness Coach" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('trainer-placeholder')" />
+            <div class="trainer-img-overlay"></div>
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name">Priya R.</h3>
+            <span class="trainer-spec">Weight Loss & Zumba</span>
+            <span class="trainer-exp">4+ Years Experience</span>
+          </div>
+        </div>
+        <div class="trainer-card glass reveal-up" data-delay="300">
+          <div class="trainer-photo">
+            <img src="images/trainer3.jpg" alt="CrossFit Coach" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('trainer-placeholder')" />
+            <div class="trainer-img-overlay"></div>
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name">Rahul K.</h3>
+            <span class="trainer-spec">CrossFit & Kickboxing</span>
+            <span class="trainer-exp">5+ Years Experience</span>
+          </div>
+        </div>
+        <div class="trainer-card glass reveal-up" data-delay="450">
+          <div class="trainer-photo">
+            <img src="images/trainer4.jpg" alt="Nutrition Coach" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('trainer-placeholder')" />
+            <div class="trainer-img-overlay"></div>
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name">Neha M.</h3>
+            <span class="trainer-spec">Nutrition & Diet Planning</span>
+            <span class="trainer-exp">3+ Years Experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery" class="gallery section-pad">
+    <div class="container">
+      <div class="section-label reveal-up">Inside Apex FLUX</div>
+      <h2 class="section-title reveal-up">The Gym Experience</h2>
+      <div class="gallery-masonry" id="galleryGrid">
+        <div class="gallery-item reveal-up" data-delay="0">
+          <img src="images/gym1.jpg" alt="Apex FLUX Gym" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <div class="gallery-hover"><span>View</span></div>
+        </div>
+        <div class="gallery-item tall reveal-up" data-delay="80">
+          <img src="images/gym2.jpg" alt="Apex FLUX Training Floor" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <div class="gallery-hover"><span>View</span></div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="160">
+          <img src="images/gym3.jpg" alt="Apex FLUX Equipment" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <div class="gallery-hover"><span>View</span></div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="240">
+          <img src="images/gym4.jpg" alt="Apex FLUX Weights" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <div class="gallery-hover"><span>View</span></div>
+        </div>
+        <div class="gallery-item tall reveal-up" data-delay="320">
+          <img src="images/gym5.jpg" alt="Apex FLUX Cardio Zone" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <div class="gallery-hover"><span>View</span></div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="400">
+          <img src="images/gym6.jpg" alt="Apex FLUX Members" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <div class="gallery-hover"><span>View</span></div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="480">
+          <img src="images/gym7.jpg" alt="Apex FLUX Community" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <div class="gallery-hover"><span>View</span></div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="560">
+          <img src="images/gym8.jpg" alt="Apex FLUX Functional Training" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <div class="gallery-hover"><span>View</span></div>
+        </div>
+      </div>
+    </div>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+      <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">&#8249;</button>
+      <button class="lightbox-next" id="lightboxNext" aria-label="Next">&#8250;</button>
+      <img id="lightboxImg" src="" alt="" />
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section-pad">
+    <div class="container">
+      <div class="section-label reveal-up">Member Stories</div>
+      <h2 class="section-title reveal-up">Real People. Real Results.</h2>
+      <div class="testimonial-slider-wrap">
+        <div class="testimonial-slider" id="testimonialSlider">
+          <div class="testimonial-slide">
+            <div class="testi-card glass">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"Great gym with an incredibly positive vibe. The moment you walk in, you feel the energy. The trainers genuinely care about your progress."</p>
+              <div class="testi-author">
+                <div class="testi-avatar">AK</div>
+                <div>
+                  <div class="testi-name">Aakash K.</div>
+                  <div class="testi-role">Member · 8 months</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testi-card glass">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"The trainers here are super friendly and knowledgeable. They helped me build a proper workout plan and I've seen amazing results in just 3 months."</p>
+              <div class="testi-author">
+                <div class="testi-avatar">SR</div>
+                <div>
+                  <div class="testi-name">Sneha R.</div>
+                  <div class="testi-role">Member · 3 months</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testi-card glass">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"Equipment is always well maintained and clean. The steam room after a heavy session is absolutely elite. Best gym decision I've ever made."</p>
+              <div class="testi-author">
+                <div class="testi-avatar">VM</div>
+                <div>
+                  <div class="testi-name">Varun M.</div>
+                  <div class="testi-role">Member · 1 year</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testi-card glass">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"Perfect place to stay motivated. The community at Apex FLUX keeps you accountable. I've never been this consistent with my fitness before."</p>
+              <div class="testi-author">
+                <div class="testi-avatar">PP</div>
+                <div>
+                  <div class="testi-name">Pooja P.</div>
+                  <div class="testi-role">Member · 6 months</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testi-card glass">
+              <div class="testi-stars">★★★★★</div>
+              <p class="testi-text">"Good vibes and everything you need for a solid workout. From free weights to functional training, this place has it all. Highly recommend it!"</p>
+              <div class="testi-author">
+                <div class="testi-avatar">RN</div>
+                <div>
+                  <div class="testi-name">Rohit N.</div>
+                  <div class="testi-role">Member · 5 months</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn" id="sliderPrev" aria-label="Previous testimonial">&#8249;</button>
+          <div class="slider-dots" id="sliderDots"></div>
+          <button class="slider-btn" id="sliderNext" aria-label="Next testimonial">&#8250;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSTAGRAM ===== -->
+  <section class="instagram-section section-pad">
+    <div class="container">
+      <div class="insta-header reveal-up">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="url(#instaGrad)" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/><defs><linearGradient id="instaGrad"><stop stop-color="#FF3A1A"/><stop offset="1" stop-color="#7B2FFF"/></linearGradient></defs></svg>
+        <h2 class="section-title" style="margin:0">Follow Our Journey</h2>
+      </div>
+      <p class="section-subtitle reveal-up">See the sweat, the smiles, and the success — every single day.</p>
+      <div class="insta-feed reveal-up">
+        <div class="insta-post">
+          <img src="images/gym1.jpg" alt="Apex FLUX Instagram" loading="lazy" onerror="this.parentElement.classList.add('insta-placeholder')" />
+          <div class="insta-overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+        </div>
+        <div class="insta-post">
+          <img src="images/gym2.jpg" alt="Apex FLUX Instagram" loading="lazy" onerror="this.parentElement.classList.add('insta-placeholder')" />
+          <div class="insta-overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+        </div>
+        <div class="insta-post">
+          <img src="images/gym3.jpg" alt="Apex FLUX Instagram" loading="lazy" onerror="this.parentElement.classList.add('insta-placeholder')" />
+          <div class="insta-overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+        </div>
+        <div class="insta-post">
+          <img src="images/gym4.jpg" alt="Apex FLUX Instagram" loading="lazy" onerror="this.parentElement.classList.add('insta-placeholder')" />
+          <div class="insta-overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+        </div>
+        <div class="insta-post">
+          <img src="images/gym5.jpg" alt="Apex FLUX Instagram" loading="lazy" onerror="this.parentElement.classList.add('insta-placeholder')" />
+          <div class="insta-overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+        </div>
+        <div class="insta-post">
+          <img src="images/gym6.jpg" alt="Apex FLUX Instagram" loading="lazy" onerror="this.parentElement.classList.add('insta-placeholder')" />
+          <div class="insta-overlay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="insta-cta reveal-up">
+        <a href="https://www.instagram.com/apex.FLUX.gym/" target="_blank" rel="noopener" class="btn-primary btn-lg insta-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Follow @apex.FLUX.gym
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact section-pad">
+    <div class="container">
+      <div class="section-label reveal-up">Get In Touch</div>
+      <h2 class="section-title reveal-up">Visit Apex FLUX Gym</h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-card glass">
+            <h3 class="contact-gym-name">Apex FLUX Gym</h3>
+            <div class="contact-detail">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Address</strong>
+                <p>119, 3rd Floor, 19th Cross,<br/>Sri Rama Temple Rd,<br/>Vivek Nagar, Ejipura,<br/>Bengaluru, Karnataka 560047</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <p>+91 77602 87575</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-icon">⏰</span>
+              <div>
+                <strong>Hours</strong>
+                <p>Mon–Sat: 6:00 AM – 10:00 PM<br/>Sunday: 7:00 AM – 8:00 PM</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <span class="contact-icon">⭐</span>
+              <div>
+                <strong>Rating</strong>
+                <p>4.8 ★ &nbsp;·&nbsp; 26+ Reviews on Google</p>
+              </div>
+            </div>
+            <div class="contact-btns">
+              <a href="tel:+917760287575" class="btn-primary">📞 Call Now</a>
+              <a href="https://maps.google.com/?q=Apex+FLUX+Gym+Ejipura+Bengaluru" target="_blank" rel="noopener" class="btn-outline">🗺 Directions</a>
+              <a href="https://www.instagram.com/apex.FLUX.gym/" target="_blank" rel="noopener" class="btn-outline">📸 Instagram</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map reveal-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3185!2d77.6244!3d12.9404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14432c3e4b7b%3A0x0!2sApex+FLUX+Gym!5e0!3m2!1sen!2sin!4v1694000000000!5m2!1sen!2sin"
+            width="100%"
+            height="420"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Apex FLUX Gym Location Map"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo-wrap" aria-label="Apex FLUX Gym">
+            <svg viewBox="0 0 320 50" xmlns="http://www.w3.org/2000/svg" class="footer-logo-svg">
+              <text x="0" y="40" class="nav-logo-text">APEX</text>
+              <polygon points="182,2 170,24 178,24 168,48 190,22 180,22 192,2" fill="url(#footerBolt)"/>
+              <text x="196" y="40" class="nav-logo-text nav-logo-FLUX">FLUX</text>
+              <defs>
+                <linearGradient id="footerBolt" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#FF3A1A"/>
+                  <stop offset="100%" stop-color="#FF8C00"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="footer-gym-label">GYM</span>
+          </a>
+          <p class="footer-tagline">Transform. Elevate. Dominate.</p>
+          <p class="footer-address">119, 3rd Floor, 19th Cross, Sri Rama Temple Rd, Vivek Nagar, Ejipura, Bengaluru 560047</p>
+          <a href="https://www.instagram.com/apex.FLUX.gym/" target="_blank" rel="noopener" class="footer-insta" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            @apex.FLUX.gym
+          </a>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#membership">Memberships</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="#programs">Personal Training</a></li>
+            <li><a href="#programs">Strength Training</a></li>
+            <li><a href="#programs">Weight Loss</a></li>
+            <li><a href="#programs">CrossFit</a></li>
+            <li><a href="#programs">Zumba Dance</a></li>
+            <li><a href="#programs">Kick Boxing</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Contact</h4>
+          <p><a href="tel:+917760287575">+91 77602 87575</a></p>
+          <p>Ejipura, Bengaluru</p>
+          <p>Karnataka 560047</p>
+          <div class="footer-rating">
+            <span>⭐ 4.8</span>
+            <span>26+ Google Reviews</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Apex FLUX Gym. All rights reserved.</p>
+        <p>Crafted with ❤️ in Bengaluru</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOAT ===== -->
+  <a href="https://wa.me/917760287575?text=Hi%20Apex%20FLUX%20Gym%2C%20I%20want%20to%20know%20more%20about%20your%20membership%20plans." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="wa-pulse"></span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
