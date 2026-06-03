@@ -1,5 +1,5 @@
 /* ============================================================
-   APEX fuze GYM — script.js
+   APEX FUZE GYM — script.js
    Premium Fitness Brand Website
    ============================================================ */
 
@@ -25,24 +25,24 @@ function initSplash() {
 
   document.body.classList.add('splash-active');
 
-  const left  = splash.querySelector('.splash-logo-left');
-  const right = splash.querySelector('.splash-logo-right');
-  const tag   = splash.querySelector('.splash-tagline');
+  const left  = document.getElementById('splashLeft');
+  const right = document.getElementById('splashRight');
+  const sub   = document.getElementById('splashSub');
 
-  // Phase 1: let glow build (600ms)
-  // Phase 2: split (800ms)
-  // Phase 3: fade splash (600ms)
+  // Phase 1: bolt flickers + glow builds (~1.8s)
+  // Phase 2: APEX splits apart left/right, FUZE GYM fades down
+  // Phase 3: splash fades out, hero revealed
 
   setTimeout(() => {
     if (left)  left.classList.add('split');
     if (right) right.classList.add('split');
-    if (tag)   tag.classList.add('split');
+    if (sub)   sub.classList.add('split');
   }, 1800);
 
   setTimeout(() => {
     splash.classList.add('hidden');
     document.body.classList.remove('splash-active');
-  }, 2600);
+  }, 2650);
 }
 
 /* ===== NAVBAR ===== */
