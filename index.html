@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Apex fuze Gym – Premium fitness training in Ejipura, Bengaluru. Transform your body, elevate your life." />
+  <meta name="description" content="Apex Fuze Gym – Premium fitness training in Ejipura, Bengaluru. Transform your body, elevate your life." />
   <meta name="keywords" content="gym Ejipura, fitness Bengaluru, personal training, weight loss, strength training" />
-  <meta property="og:title" content="Apex fuze Gym – Premium Fitness Training" />
-  <meta property="og:description" content="Transform your body and elevate your life at Apex fuze Gym, Ejipura." />
-  <title>Apex fuze Gym – Transform. Elevate. Dominate.</title>
+  <meta property="og:title" content="Apex Fuze Gym – Premium Fitness Training" />
+  <meta property="og:description" content="Transform your body and elevate your life at Apex Fuze Gym, Ejipura." />
+  <title>Apex Fuze Gym – Transform. Elevate. Dominate.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -19,29 +19,45 @@
   <div id="splash" aria-hidden="true">
     <div class="splash-bg"></div>
     <div class="splash-logo-wrap">
+      <!-- Full logo SVG that splits: left half = APEX, right half = FUZE GYM, center = bolt -->
       <div class="splash-logo">
         <div class="splash-logo-left">
-          <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
-            <text x="10" y="65" class="logo-text-main">APEX</text>
+          <!-- APEX text — white, heavy -->
+          <svg viewBox="0 0 200 72" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <defs>
+              <style>.st{font-family:'Bebas Neue',sans-serif;font-size:72px;letter-spacing:4px;}</style>
+            </defs>
+            <text x="4" y="66" class="st" fill="#FFFFFF">APEX</text>
           </svg>
         </div>
         <div class="splash-logo-bolt">
-          <svg viewBox="0 0 40 80" xmlns="http://www.w3.org/2000/svg" class="bolt-svg">
-            <polygon points="28,0 12,38 22,38 12,80 34,32 22,32 34,0" fill="url(#boltGrad)" class="bolt-poly"/>
+          <!-- Accurate bolt: tall angular lightning with highlight slash, red gradient + dark body -->
+          <svg viewBox="0 0 56 110" xmlns="http://www.w3.org/2000/svg" class="bolt-svg">
             <defs>
-              <linearGradient id="boltGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#FF3A1A"/>
-                <stop offset="100%" stop-color="#FF8C00"/>
+              <linearGradient id="boltGrad" x1="0.3" y1="0" x2="0.7" y2="1">
+                <stop offset="0%"   stop-color="#CC1010"/>
+                <stop offset="40%"  stop-color="#E82020"/>
+                <stop offset="100%" stop-color="#8B0000"/>
+              </linearGradient>
+              <linearGradient id="boltHighlight" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%"   stop-color="#FF6060" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#FF2020" stop-opacity="0"/>
               </linearGradient>
             </defs>
+            <!-- Main bolt body -->
+            <polygon points="38,0 16,52 28,52 14,110 46,46 32,46 44,0" fill="url(#boltGrad)" class="bolt-poly"/>
+            <!-- Highlight slash (top-left bright edge) -->
+            <polygon points="38,0 28,0 14,46 20,46" fill="url(#boltHighlight)" opacity="0.7"/>
           </svg>
         </div>
         <div class="splash-logo-right">
-          <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
-            <text x="10" y="65" class="logo-text-main logo-text-fuze">fuze</text>
+          <!-- FUZE in purple, GYM spaced below handled by tagline -->
+          <svg viewBox="0 0 200 72" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <text x="4" y="66" class="st" fill="#8B2FE8">FUZE</text>
           </svg>
         </div>
       </div>
+      <!-- GYM sub-label in purple, spaced letters -->
       <div class="splash-tagline">GYM</div>
       <div class="splash-glow"></div>
     </div>
@@ -53,8 +69,8 @@
       <polygon points="140,0 60,190 110,190 60,400 170,160 110,160 170,0" fill="url(#wmGrad)"/>
       <defs>
         <linearGradient id="wmGrad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#FF3A1A"/>
-          <stop offset="100%" stop-color="#7B2FFF"/>
+          <stop offset="0%" stop-color="#C8102E"/>
+          <stop offset="100%" stop-color="#8B2FC9"/>
         </linearGradient>
       </defs>
     </svg>
@@ -63,15 +79,15 @@
   <!-- ===== NAVBAR ===== -->
   <nav id="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
-      <a href="#home" class="nav-logo" aria-label="Apex fuze Gym Home">
+      <a href="#home" class="nav-logo" aria-label="Apex Fuze Gym Home">
         <svg viewBox="0 0 320 50" xmlns="http://www.w3.org/2000/svg" class="nav-logo-svg">
           <text x="0" y="40" class="nav-logo-text">APEX</text>
           <polygon points="182,2 170,24 178,24 168,48 190,22 180,22 192,2" fill="url(#navBolt)"/>
-          <text x="196" y="40" class="nav-logo-text nav-logo-fuze">fuze</text>
+          <text x="196" y="40" class="nav-logo-text nav-logo-fuze">FUZE</text>
           <defs>
             <linearGradient id="navBolt" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#FF3A1A"/>
-              <stop offset="100%" stop-color="#FF8C00"/>
+              <stop offset="0%" stop-color="#C8102E"/>
+              <stop offset="100%" stop-color="#8B2FC9"/>
             </linearGradient>
           </defs>
         </svg>
@@ -154,7 +170,7 @@
       <div class="about-grid">
         <div class="about-image-block reveal-left">
           <div class="about-img-frame">
-            <img src="images/gym1.jpg" alt="Apex fuze Gym interior" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('img-placeholder')" />
+            <img src="images/gym1.jpg" alt="Apex Fuze Gym interior" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('img-placeholder')" />
             <div class="img-glow"></div>
           </div>
           <div class="about-img-accent">
@@ -162,9 +178,9 @@
           </div>
         </div>
         <div class="about-text-block reveal-right">
-          <p class="about-lead">At Apex fuze Gym, we believe that transformation is not just physical — it's a complete lifestyle upgrade.</p>
+          <p class="about-lead">At Apex Fuze Gym, we believe that transformation is not just physical — it's a complete lifestyle upgrade.</p>
           <p class="about-body">Located in the heart of Ejipura, Bengaluru, our gym was born out of a single powerful idea: to create a space where discipline meets passion. We combined world-class equipment with a culture of positivity, pushing every member to unlock the best version of themselves.</p>
-          <p class="about-body">Our certified trainers don't just count reps — they invest in your journey. Whether you're a beginner stepping into the gym for the first time or an athlete chasing peak performance, Apex fuze is your home.</p>
+          <p class="about-body">Our certified trainers don't just count reps — they invest in your journey. Whether you're a beginner stepping into the gym for the first time or an athlete chasing peak performance, Apex Fuze is your home.</p>
           <div class="about-pillars">
             <div class="pillar"><span class="pillar-icon">⚡</span>Discipline</div>
             <div class="pillar"><span class="pillar-icon">🔥</span>Consistency</div>
@@ -176,13 +192,13 @@
       <div class="about-grid about-grid-reverse mt-80">
         <div class="about-text-block reveal-left">
           <h3 class="about-subtitle">Positive Vibes. Real Results.</h3>
-          <p class="about-body">The Apex fuze community is what truly sets us apart. Walk in on any given morning and you'll feel the energy — members encouraging each other, trainers celebrating milestones, and a collective determination to grow stronger every day.</p>
+          <p class="about-body">The Apex Fuze community is what truly sets us apart. Walk in on any given morning and you'll feel the energy — members encouraging each other, trainers celebrating milestones, and a collective determination to grow stronger every day.</p>
           <p class="about-body">We've designed every corner of our 3rd-floor facility to inspire. From our modern strength zone to functional training bays, every square foot is optimized for performance. And with our exclusive steam room, recovery is as much a priority as the workout itself.</p>
           <a href="#programs" class="btn-primary mt-20">Explore Programs</a>
         </div>
         <div class="about-image-block reveal-right">
           <div class="about-img-frame">
-            <img src="images/gym2.jpg" alt="Apex fuze Gym training" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('img-placeholder')" />
+            <img src="images/gym2.jpg" alt="Apex Fuze Gym training" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('img-placeholder')" />
             <div class="img-glow"></div>
           </div>
         </div>
@@ -193,7 +209,7 @@
   <!-- ===== WHY CHOOSE US ===== -->
   <section class="why section-pad">
     <div class="container">
-      <div class="section-label reveal-up">Why Apex fuze</div>
+      <div class="section-label reveal-up">Why Apex Fuze</div>
       <h2 class="section-title reveal-up">The Apex Advantage</h2>
       <div class="why-grid">
         <div class="why-card glass reveal-up" data-delay="0">
@@ -239,7 +255,7 @@
 
         <div class="program-card glass reveal-up" data-delay="0">
           <div class="program-icon-wrap">
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg1)" stroke-width="1.5"/><path d="M10 20h4M26 20h4M14 20a6 6 0 0012 0M14 20a6 6 0 0112 0" stroke="url(#pg1)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="pg1" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#FF3A1A"/><stop offset="1" stop-color="#7B2FFF"/></linearGradient></defs></svg>
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg1)" stroke-width="1.5"/><path d="M10 20h4M26 20h4M14 20a6 6 0 0012 0M14 20a6 6 0 0112 0" stroke="url(#pg1)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="pg1" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#C8102E"/><stop offset="1" stop-color="#8B2FC9"/></linearGradient></defs></svg>
           </div>
           <h3>Personal Training</h3>
           <p>One-on-one sessions designed around your specific goals, body type, and fitness level.</p>
@@ -248,7 +264,7 @@
 
         <div class="program-card glass reveal-up" data-delay="80">
           <div class="program-icon-wrap">
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg2)" stroke-width="1.5"/><path d="M12 28l8-16 8 16" stroke="url(#pg2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="pg2" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#FF3A1A"/><stop offset="1" stop-color="#FF8C00"/></linearGradient></defs></svg>
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg2)" stroke-width="1.5"/><path d="M12 28l8-16 8 16" stroke="url(#pg2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="pg2" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#C8102E"/><stop offset="1" stop-color="#8B2FC9"/></linearGradient></defs></svg>
           </div>
           <h3>Executive Gym</h3>
           <p>Private, distraction-free training space for professionals who value time and results.</p>
@@ -257,7 +273,7 @@
 
         <div class="program-card glass reveal-up" data-delay="160">
           <div class="program-icon-wrap">
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg3)" stroke-width="1.5"/><path d="M14 20c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6-6-2.7-6-6z" stroke="url(#pg3)" stroke-width="1.5"/><path d="M20 14V10M20 30v-4" stroke="url(#pg3)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="pg3" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#7B2FFF"/><stop offset="1" stop-color="#FF3A1A"/></linearGradient></defs></svg>
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg3)" stroke-width="1.5"/><path d="M14 20c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6-6-2.7-6-6z" stroke="url(#pg3)" stroke-width="1.5"/><path d="M20 14V10M20 30v-4" stroke="url(#pg3)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="pg3" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#8B2FC9"/><stop offset="1" stop-color="#C8102E"/></linearGradient></defs></svg>
           </div>
           <h3>Zumba Dance</h3>
           <p>High-energy dance fitness that burns calories while keeping the fun alive.</p>
@@ -266,7 +282,7 @@
 
         <div class="program-card glass reveal-up" data-delay="240">
           <div class="program-icon-wrap">
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg4)" stroke-width="1.5"/><rect x="12" y="17" width="16" height="6" rx="3" stroke="url(#pg4)" stroke-width="1.5"/><defs><linearGradient id="pg4" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#FF3A1A"/><stop offset="1" stop-color="#7B2FFF"/></linearGradient></defs></svg>
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg4)" stroke-width="1.5"/><rect x="12" y="17" width="16" height="6" rx="3" stroke="url(#pg4)" stroke-width="1.5"/><defs><linearGradient id="pg4" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#C8102E"/><stop offset="1" stop-color="#8B2FC9"/></linearGradient></defs></svg>
           </div>
           <h3>Strength Training</h3>
           <p>Periodized programs to develop raw, functional, and aesthetically powerful physiques.</p>
@@ -275,7 +291,7 @@
 
         <div class="program-card glass reveal-up" data-delay="320">
           <div class="program-icon-wrap">
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg5)" stroke-width="1.5"/><path d="M15 25l5-10 5 10" stroke="url(#pg5)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="pg5" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#FF8C00"/><stop offset="1" stop-color="#FF3A1A"/></linearGradient></defs></svg>
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg5)" stroke-width="1.5"/><path d="M15 25l5-10 5 10" stroke="url(#pg5)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="pg5" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#8B2FC9"/><stop offset="1" stop-color="#C8102E"/></linearGradient></defs></svg>
           </div>
           <h3>Weight Loss</h3>
           <p>Comprehensive fat-loss program combining cardio, nutrition coaching, and accountability.</p>
@@ -284,7 +300,7 @@
 
         <div class="program-card glass reveal-up" data-delay="400">
           <div class="program-icon-wrap">
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg6)" stroke-width="1.5"/><circle cx="20" cy="24" r="5" stroke="url(#pg6)" stroke-width="1.5"/><path d="M20 19v-5" stroke="url(#pg6)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="pg6" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#7B2FFF"/><stop offset="1" stop-color="#FF8C00"/></linearGradient></defs></svg>
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg6)" stroke-width="1.5"/><circle cx="20" cy="24" r="5" stroke="url(#pg6)" stroke-width="1.5"/><path d="M20 19v-5" stroke="url(#pg6)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="pg6" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#8B2FC9"/><stop offset="1" stop-color="#8B2FC9"/></linearGradient></defs></svg>
           </div>
           <h3>Kettlebell Training</h3>
           <p>Dynamic kettlebell protocols that build grip strength, power, and total-body conditioning.</p>
@@ -293,7 +309,7 @@
 
         <div class="program-card glass reveal-up" data-delay="480">
           <div class="program-icon-wrap">
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg7)" stroke-width="1.5"/><path d="M15 20h10M20 15v10" stroke="url(#pg7)" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="pg7" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#FF3A1A"/><stop offset="1" stop-color="#FF8C00"/></linearGradient></defs></svg>
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg7)" stroke-width="1.5"/><path d="M15 20h10M20 15v10" stroke="url(#pg7)" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="pg7" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#C8102E"/><stop offset="1" stop-color="#8B2FC9"/></linearGradient></defs></svg>
           </div>
           <h3>Six Pack Training</h3>
           <p>Targeted core programs with nutrition protocols to achieve visible, defined abdominals.</p>
@@ -302,7 +318,7 @@
 
         <div class="program-card glass reveal-up" data-delay="560">
           <div class="program-icon-wrap">
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg8)" stroke-width="1.5"/><polygon points="20,10 30,28 10,28" stroke="url(#pg8)" stroke-width="1.5" fill="none"/><defs><linearGradient id="pg8" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#7B2FFF"/><stop offset="1" stop-color="#FF3A1A"/></linearGradient></defs></svg>
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg8)" stroke-width="1.5"/><polygon points="20,10 30,28 10,28" stroke="url(#pg8)" stroke-width="1.5" fill="none"/><defs><linearGradient id="pg8" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#8B2FC9"/><stop offset="1" stop-color="#C8102E"/></linearGradient></defs></svg>
           </div>
           <h3>CrossFit Workouts</h3>
           <p>Varied, high-intensity functional movements that forge unmatched athletic conditioning.</p>
@@ -311,7 +327,7 @@
 
         <div class="program-card glass reveal-up" data-delay="640">
           <div class="program-icon-wrap">
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg9)" stroke-width="1.5"/><path d="M16 26l-4-6 8-10 8 10-4 6" stroke="url(#pg9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="pg9" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#FF8C00"/><stop offset="1" stop-color="#7B2FFF"/></linearGradient></defs></svg>
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg9)" stroke-width="1.5"/><path d="M16 26l-4-6 8-10 8 10-4 6" stroke="url(#pg9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="pg9" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#8B2FC9"/><stop offset="1" stop-color="#8B2FC9"/></linearGradient></defs></svg>
           </div>
           <h3>Kick Boxing</h3>
           <p>Combat-inspired cardio that builds speed, coordination, power, and incredible stamina.</p>
@@ -320,7 +336,7 @@
 
         <div class="program-card glass reveal-up" data-delay="720">
           <div class="program-icon-wrap">
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg10)" stroke-width="1.5"/><path d="M12 22h16M20 14v4" stroke="url(#pg10)" stroke-width="1.5" stroke-linecap="round"/><path d="M15 26h10" stroke="url(#pg10)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="pg10" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#FF3A1A"/><stop offset="1" stop-color="#7B2FFF"/></linearGradient></defs></svg>
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg10)" stroke-width="1.5"/><path d="M12 22h16M20 14v4" stroke="url(#pg10)" stroke-width="1.5" stroke-linecap="round"/><path d="M15 26h10" stroke="url(#pg10)" stroke-width="1.5" stroke-linecap="round"/><defs><linearGradient id="pg10" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#C8102E"/><stop offset="1" stop-color="#8B2FC9"/></linearGradient></defs></svg>
           </div>
           <h3>Diet Planning</h3>
           <p>Personalised nutrition strategies crafted to complement your training and accelerate results.</p>
@@ -329,7 +345,7 @@
 
         <div class="program-card glass reveal-up" data-delay="800">
           <div class="program-icon-wrap">
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg11)" stroke-width="1.5"/><path d="M14 20s0-6 6-6 6 6 6 6-1 6-6 6-6-6-6-6z" stroke="url(#pg11)" stroke-width="1.5"/><defs><linearGradient id="pg11" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#7B2FFF"/><stop offset="1" stop-color="#FF8C00"/></linearGradient></defs></svg>
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="url(#pg11)" stroke-width="1.5"/><path d="M14 20s0-6 6-6 6 6 6 6-1 6-6 6-6-6-6-6z" stroke="url(#pg11)" stroke-width="1.5"/><defs><linearGradient id="pg11" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#8B2FC9"/><stop offset="1" stop-color="#8B2FC9"/></linearGradient></defs></svg>
           </div>
           <h3>Steam Room</h3>
           <p>Premium post-workout recovery facility for deep muscle relaxation and detoxification.</p>
@@ -365,7 +381,7 @@
             <li><span class="feat-check">✓</span> Progress Tracking</li>
             <li><span class="feat-x">✗</span> Unlimited PT Sessions</li>
           </ul>
-          <a href="https://wa.me/917760287575?text=Hi%2C%20I%20am%20interested%20in%20the%20Pro%20Plan%20at%20Apex%20fuze%20Gym." target="_blank" rel="noopener" class="btn-primary plan-btn">Join Pro</a>
+          <a href="https://wa.me/917760287575?text=Hi%2C%20I%20am%20interested%20in%20the%20Pro%20Plan%20at%20Apex%20Fuze%20Gym." target="_blank" rel="noopener" class="btn-primary plan-btn">Join Pro</a>
         </div>
 
         <div class="pricing-card glass reveal-up" data-delay="300">
@@ -385,7 +401,7 @@
             <li><span class="feat-check">✓</span> Body Composition Analysis</li>
             <li><span class="feat-check">✓</span> Priority Trainer Booking</li>
           </ul>
-          <a href="https://wa.me/917760287575?text=Hi%2C%20I%20am%20interested%20in%20the%20Elite%20Plan%20at%20Apex%20fuze%20Gym." target="_blank" rel="noopener" class="btn-outline plan-btn">Go Elite</a>
+          <a href="https://wa.me/917760287575?text=Hi%2C%20I%20am%20interested%20in%20the%20Elite%20Plan%20at%20Apex%20Fuze%20Gym." target="_blank" rel="noopener" class="btn-outline plan-btn">Go Elite</a>
         </div>
 
       </div>
@@ -483,39 +499,39 @@
   <!-- ===== GALLERY ===== -->
   <section id="gallery" class="gallery section-pad">
     <div class="container">
-      <div class="section-label reveal-up">Inside Apex fuze</div>
+      <div class="section-label reveal-up">Inside Apex Fuze</div>
       <h2 class="section-title reveal-up">The Gym Experience</h2>
       <div class="gallery-masonry" id="galleryGrid">
         <div class="gallery-item reveal-up" data-delay="0">
-          <img src="images/gym1.jpg" alt="Apex fuze Gym" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <img src="images/gym1.jpg" alt="Apex Fuze Gym" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
           <div class="gallery-hover"><span>View</span></div>
         </div>
         <div class="gallery-item tall reveal-up" data-delay="80">
-          <img src="images/gym2.jpg" alt="Apex fuze Training Floor" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <img src="images/gym2.jpg" alt="Apex Fuze Training Floor" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
           <div class="gallery-hover"><span>View</span></div>
         </div>
         <div class="gallery-item reveal-up" data-delay="160">
-          <img src="images/gym3.jpg" alt="Apex fuze Equipment" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <img src="images/gym3.jpg" alt="Apex Fuze Equipment" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
           <div class="gallery-hover"><span>View</span></div>
         </div>
         <div class="gallery-item reveal-up" data-delay="240">
-          <img src="images/gym4.jpg" alt="Apex fuze Weights" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <img src="images/gym4.jpg" alt="Apex Fuze Weights" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
           <div class="gallery-hover"><span>View</span></div>
         </div>
         <div class="gallery-item tall reveal-up" data-delay="320">
-          <img src="images/gym5.jpg" alt="Apex fuze Cardio Zone" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <img src="images/gym5.jpg" alt="Apex Fuze Cardio Zone" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
           <div class="gallery-hover"><span>View</span></div>
         </div>
         <div class="gallery-item reveal-up" data-delay="400">
-          <img src="images/gym6.jpg" alt="Apex fuze Members" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <img src="images/gym6.jpg" alt="Apex Fuze Members" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
           <div class="gallery-hover"><span>View</span></div>
         </div>
         <div class="gallery-item reveal-up" data-delay="480">
-          <img src="images/gym7.jpg" alt="Apex fuze Community" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <img src="images/gym7.jpg" alt="Apex Fuze Community" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
           <div class="gallery-hover"><span>View</span></div>
         </div>
         <div class="gallery-item reveal-up" data-delay="560">
-          <img src="images/gym8.jpg" alt="Apex fuze Functional Training" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <img src="images/gym8.jpg" alt="Apex Fuze Functional Training" loading="lazy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
           <div class="gallery-hover"><span>View</span></div>
         </div>
       </div>
@@ -578,7 +594,7 @@
           <div class="testimonial-slide">
             <div class="testi-card glass">
               <div class="testi-stars">★★★★★</div>
-              <p class="testi-text">"Perfect place to stay motivated. The community at Apex fuze keeps you accountable. I've never been this consistent with my fitness before."</p>
+              <p class="testi-text">"Perfect place to stay motivated. The community at Apex Fuze keeps you accountable. I've never been this consistent with my fitness before."</p>
               <div class="testi-author">
                 <div class="testi-avatar">PP</div>
                 <div>
@@ -615,43 +631,43 @@
   <section class="instagram-section section-pad">
     <div class="container">
       <div class="insta-header reveal-up">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="url(#instaGrad)" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/><defs><linearGradient id="instaGrad"><stop stop-color="#FF3A1A"/><stop offset="1" stop-color="#7B2FFF"/></linearGradient></defs></svg>
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="url(#instaGrad)" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/><defs><linearGradient id="instaGrad"><stop stop-color="#C8102E"/><stop offset="1" stop-color="#8B2FC9"/></linearGradient></defs></svg>
         <h2 class="section-title" style="margin:0">Follow Our Journey</h2>
       </div>
       <p class="section-subtitle reveal-up">See the sweat, the smiles, and the success — every single day.</p>
       <div class="insta-feed reveal-up">
         <div class="insta-post">
-          <img src="images/gym1.jpg" alt="Apex fuze Instagram" loading="lazy" onerror="this.parentElement.classList.add('insta-placeholder')" />
+          <img src="images/gym1.jpg" alt="Apex Fuze Instagram" loading="lazy" onerror="this.parentElement.classList.add('insta-placeholder')" />
           <div class="insta-overlay">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
           </div>
         </div>
         <div class="insta-post">
-          <img src="images/gym2.jpg" alt="Apex fuze Instagram" loading="lazy" onerror="this.parentElement.classList.add('insta-placeholder')" />
+          <img src="images/gym2.jpg" alt="Apex Fuze Instagram" loading="lazy" onerror="this.parentElement.classList.add('insta-placeholder')" />
           <div class="insta-overlay">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
           </div>
         </div>
         <div class="insta-post">
-          <img src="images/gym3.jpg" alt="Apex fuze Instagram" loading="lazy" onerror="this.parentElement.classList.add('insta-placeholder')" />
+          <img src="images/gym3.jpg" alt="Apex Fuze Instagram" loading="lazy" onerror="this.parentElement.classList.add('insta-placeholder')" />
           <div class="insta-overlay">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
           </div>
         </div>
         <div class="insta-post">
-          <img src="images/gym4.jpg" alt="Apex fuze Instagram" loading="lazy" onerror="this.parentElement.classList.add('insta-placeholder')" />
+          <img src="images/gym4.jpg" alt="Apex Fuze Instagram" loading="lazy" onerror="this.parentElement.classList.add('insta-placeholder')" />
           <div class="insta-overlay">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
           </div>
         </div>
         <div class="insta-post">
-          <img src="images/gym5.jpg" alt="Apex fuze Instagram" loading="lazy" onerror="this.parentElement.classList.add('insta-placeholder')" />
+          <img src="images/gym5.jpg" alt="Apex Fuze Instagram" loading="lazy" onerror="this.parentElement.classList.add('insta-placeholder')" />
           <div class="insta-overlay">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
           </div>
         </div>
         <div class="insta-post">
-          <img src="images/gym6.jpg" alt="Apex fuze Instagram" loading="lazy" onerror="this.parentElement.classList.add('insta-placeholder')" />
+          <img src="images/gym6.jpg" alt="Apex Fuze Instagram" loading="lazy" onerror="this.parentElement.classList.add('insta-placeholder')" />
           <div class="insta-overlay">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
           </div>
@@ -670,11 +686,11 @@
   <section id="contact" class="contact section-pad">
     <div class="container">
       <div class="section-label reveal-up">Get In Touch</div>
-      <h2 class="section-title reveal-up">Visit Apex fuze Gym</h2>
+      <h2 class="section-title reveal-up">Visit Apex Fuze Gym</h2>
       <div class="contact-grid">
         <div class="contact-info reveal-left">
           <div class="contact-card glass">
-            <h3 class="contact-gym-name">Apex fuze Gym</h3>
+            <h3 class="contact-gym-name">Apex Fuze Gym</h3>
             <div class="contact-detail">
               <span class="contact-icon">📍</span>
               <div>
@@ -705,21 +721,21 @@
             </div>
             <div class="contact-btns">
               <a href="tel:+917760287575" class="btn-primary">📞 Call Now</a>
-              <a href="https://maps.google.com/?q=Apex+fuze+Gym+Ejipura+Bengaluru" target="_blank" rel="noopener" class="btn-outline">🗺 Directions</a>
+              <a href="https://maps.google.com/?q=Apex+Fuze+Gym+Ejipura+Bengaluru" target="_blank" rel="noopener" class="btn-outline">🗺 Directions</a>
               <a href="https://www.instagram.com/apex.fuze.gym/" target="_blank" rel="noopener" class="btn-outline">📸 Instagram</a>
             </div>
           </div>
         </div>
         <div class="contact-map reveal-right">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3185!2d77.6244!3d12.9404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14432c3e4b7b%3A0x0!2sApex+fuze+Gym!5e0!3m2!1sen!2sin!4v1694000000000!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3185!2d77.6244!3d12.9404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14432c3e4b7b%3A0x0!2sApex+Fuze+Gym!5e0!3m2!1sen!2sin!4v1694000000000!5m2!1sen!2sin"
             width="100%"
             height="420"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            title="Apex fuze Gym Location Map"
+            title="Apex Fuze Gym Location Map"
           ></iframe>
         </div>
       </div>
@@ -731,15 +747,15 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="#home" class="footer-logo-wrap" aria-label="Apex fuze Gym">
+          <a href="#home" class="footer-logo-wrap" aria-label="Apex Fuze Gym">
             <svg viewBox="0 0 320 50" xmlns="http://www.w3.org/2000/svg" class="footer-logo-svg">
               <text x="0" y="40" class="nav-logo-text">APEX</text>
               <polygon points="182,2 170,24 178,24 168,48 190,22 180,22 192,2" fill="url(#footerBolt)"/>
-              <text x="196" y="40" class="nav-logo-text nav-logo-fuze">fuze</text>
+              <text x="196" y="40" class="nav-logo-text nav-logo-fuze">FUZE</text>
               <defs>
                 <linearGradient id="footerBolt" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#FF3A1A"/>
-                  <stop offset="100%" stop-color="#FF8C00"/>
+                  <stop offset="0%" stop-color="#C8102E"/>
+                  <stop offset="100%" stop-color="#8B2FC9"/>
                 </linearGradient>
               </defs>
             </svg>
@@ -786,14 +802,14 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 Apex fuze Gym. All rights reserved.</p>
+        <p>&copy; 2024 Apex Fuze Gym. All rights reserved.</p>
         <p>Crafted with ❤️ in Bengaluru</p>
       </div>
     </div>
   </footer>
 
   <!-- ===== WHATSAPP FLOAT ===== -->
-  <a href="https://wa.me/917760287575?text=Hi%20Apex%20fuze%20Gym%2C%20I%20want%20to%20know%20more%20about%20your%20membership%20plans." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/917760287575?text=Hi%20Apex%20Fuze%20Gym%2C%20I%20want%20to%20know%20more%20about%20your%20membership%20plans." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
     <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
     </svg>
