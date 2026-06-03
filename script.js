@@ -1,5 +1,5 @@
 /* ============================================================
-   APEX FLUX GYM — script.js
+   APEX fuze GYM — script.js
    Premium Fitness Brand Website
    ============================================================ */
 
