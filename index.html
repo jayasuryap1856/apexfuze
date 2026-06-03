@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style_v2.css" />
 </head>
 <body>
 
@@ -19,46 +19,105 @@
   <div id="splash" aria-hidden="true">
     <div class="splash-bg"></div>
     <div class="splash-logo-wrap">
-      <!-- Full logo SVG that splits: left half = APEX, right half = FUZE GYM, center = bolt -->
-      <div class="splash-logo">
-        <div class="splash-logo-left">
-          <!-- APEX text — white, heavy -->
-          <svg viewBox="0 0 200 72" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
-            <defs>
-              <style>.st{font-family:'Bebas Neue',sans-serif;font-size:72px;letter-spacing:4px;}</style>
-            </defs>
-            <text x="4" y="66" class="st" fill="#FFFFFF">APEX</text>
-          </svg>
-        </div>
-        <div class="splash-logo-bolt">
-          <!-- Accurate bolt: tall angular lightning with highlight slash, red gradient + dark body -->
-          <svg viewBox="0 0 56 110" xmlns="http://www.w3.org/2000/svg" class="bolt-svg">
-            <defs>
-              <linearGradient id="boltGrad" x1="0.3" y1="0" x2="0.7" y2="1">
-                <stop offset="0%"   stop-color="#CC1010"/>
-                <stop offset="40%"  stop-color="#E82020"/>
-                <stop offset="100%" stop-color="#8B0000"/>
-              </linearGradient>
-              <linearGradient id="boltHighlight" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%"   stop-color="#FF6060" stop-opacity="0.9"/>
-                <stop offset="100%" stop-color="#FF2020" stop-opacity="0"/>
-              </linearGradient>
-            </defs>
-            <!-- Main bolt body -->
-            <polygon points="38,0 16,52 28,52 14,110 46,46 32,46 44,0" fill="url(#boltGrad)" class="bolt-poly"/>
-            <!-- Highlight slash (top-left bright edge) -->
-            <polygon points="38,0 28,0 14,46 20,46" fill="url(#boltHighlight)" opacity="0.7"/>
-          </svg>
-        </div>
-        <div class="splash-logo-right">
-          <!-- FUZE in purple, GYM spaced below handled by tagline -->
-          <svg viewBox="0 0 200 72" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
-            <text x="4" y="66" class="st" fill="#8B2FE8">FUZE</text>
-          </svg>
-        </div>
-      </div>
-      <!-- GYM sub-label in purple, spaced letters -->
-      <div class="splash-tagline">GYM</div>
+
+      <!-- Single unified SVG — exact replica of logo layout -->
+      <svg id="splashSVG" viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <!-- Bolt: deep crimson, metallic, dark body -->
+          <linearGradient id="boltMain" x1="0.4" y1="0" x2="0.6" y2="1">
+            <stop offset="0%"   stop-color="#E01020"/>
+            <stop offset="30%"  stop-color="#C8102E"/>
+            <stop offset="70%"  stop-color="#7A0A10"/>
+            <stop offset="100%" stop-color="#C8102E"/>
+          </linearGradient>
+          <!-- Bright highlight edge on bolt -->
+          <linearGradient id="boltEdge" x1="0" y1="0" x2="1" y2="0.8">
+            <stop offset="0%"   stop-color="#FF7070" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#CC1020" stop-opacity="0"/>
+          </linearGradient>
+          <!-- Dark inner shadow on bolt right side -->
+          <linearGradient id="boltShadow" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%"   stop-color="#3A0000" stop-opacity="0.6"/>
+            <stop offset="100%" stop-color="#3A0000" stop-opacity="0"/>
+          </linearGradient>
+          <!-- Glow filter for bolt -->
+          <filter id="boltGlow" x="-40%" y="-20%" width="180%" height="140%">
+            <feGaussianBlur stdDeviation="6" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="boltGlowSoft" x="-60%" y="-30%" width="220%" height="160%">
+            <feGaussianBlur stdDeviation="14" result="blur"/>
+            <feFlood flood-color="#C8102E" flood-opacity="0.5" result="color"/>
+            <feComposite in="color" in2="blur" operator="in" result="glow"/>
+            <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <!-- ── BOLT (centered, tall, goes behind/through APEX text) ── -->
+        <!-- Bolt spans from top ~y=10 to bottom ~y=240, centered at x=200 -->
+        <!-- Main body: angular lightning shape -->
+        <g class="bolt-group" filter="url(#boltGlowSoft)">
+          <!-- Outer glow layer (blurred, wide) -->
+          <polygon
+            points="218,10 178,130 202,130 168,240 228,118 202,118 224,10"
+            fill="#C8102E" opacity="0.35" filter="url(#boltGlow)"
+          />
+          <!-- Main bolt body -->
+          <polygon
+            points="218,10 178,130 202,130 168,240 228,118 202,118 224,10"
+            fill="url(#boltMain)"
+            class="bolt-poly"
+          />
+          <!-- Left highlight edge (bright crimson slash) -->
+          <polygon
+            points="218,10 204,10 172,118 184,118"
+            fill="url(#boltEdge)"
+            opacity="0.85"
+          />
+          <!-- Right shadow (dark inner depth) -->
+          <polygon
+            points="204,130 228,118 202,118"
+            fill="url(#boltShadow)"
+            opacity="0.9"
+          />
+        </g>
+
+        <!-- ── APEX (white, bold, overlaps bolt horizontally) ── -->
+        <!-- Split into left half and right half for the split animation -->
+        <g id="splashLeft">
+          <text
+            x="48" y="168"
+            font-family="'Bebas Neue', sans-serif"
+            font-size="118"
+            fill="#FFFFFF"
+            letter-spacing="6"
+            text-anchor="middle"
+          >AP</text>
+        </g>
+        <g id="splashRight">
+          <text
+            x="306" y="168"
+            font-family="'Bebas Neue', sans-serif"
+            font-size="118"
+            fill="#FFFFFF"
+            letter-spacing="6"
+            text-anchor="middle"
+          >EX</text>
+        </g>
+
+        <!-- ── FUZE GYM (purple, letter-spaced, below APEX) ── -->
+        <g id="splashSub">
+          <text
+            x="200" y="230"
+            font-family="'Bebas Neue', sans-serif"
+            font-size="32"
+            fill="#8B2FC9"
+            letter-spacing="18"
+            text-anchor="middle"
+          >FUZE  GYM</text>
+        </g>
+      </svg>
+
       <div class="splash-glow"></div>
     </div>
   </div>
@@ -816,6 +875,6 @@
     <span class="wa-pulse"></span>
   </a>
 
-  <script src="script.js"></script>
+  <script src="script_v2.js"></script>
 </body>
 </html>
