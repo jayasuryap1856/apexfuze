@@ -1,5 +1,5 @@
 /* ============================================================
-   APEX FLUX GYM — style.css
+   APEX FUZE GYM — style.css
    Premium Fitness Brand Website
    ============================================================ */
 
@@ -138,7 +138,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   fill: #ffffff;
   letter-spacing: 4px;
 }
-.logo-text-FLUX { fill: url(#purpleGradSplash); }
+.logo-text-fuze { fill: url(#purpleGradSplash); }
 
 .splash-logo-bolt { width: 44px; display: flex; align-items: center; justify-content: center; }
 .bolt-svg { width: 44px; height: 80px; }
@@ -216,7 +216,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   fill: #fff;
   letter-spacing: 2px;
 }
-.nav-logo-FLUX { fill: url(#navBolt); }
+.nav-logo-fuze { fill: url(#navBolt); }
 .nav-gym-label {
   font-family: var(--font-display);
   font-size: 11px;
@@ -1290,7 +1290,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   position: relative;
 }
 .contact-map::before {
-  content: '📍 Apex FLUX Gym · Ejipura, Bengaluru';
+  content: '📍 Apex fuze Gym · Ejipura, Bengaluru';
   display: block;
   background: rgba(255,58,26,0.1);
   border-bottom: 1px solid rgba(255,58,26,0.15);
