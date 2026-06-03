@@ -197,22 +197,25 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   gap: 24px;
 }
 
-.nav-logo { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
-.nav-logo-svg { height: 36px; width: auto; }
+.nav-logo { display: flex; align-items: center; flex-shrink: 0; }
+.nav-logo-svg { height: 44px; width: auto; }
+.footer-logo-svg { height: 44px; width: auto; }
 .nav-logo-text {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 36px;
+  font-size: 38px;
   fill: #fff;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .nav-logo-fuze { fill: #8B2FC9; }
-.nav-gym-label {
-  font-family: var(--font-display);
+.nav-logo-gym {
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 11px;
-  letter-spacing: 6px;
-  color: #8B2FC9;
-  margin-top: 2px;
+  fill: #8B2FC9;
+  letter-spacing: 8px;
+  text-anchor: middle;
 }
+/* Hide old detached labels */
+.nav-gym-label, .footer-gym-label { display: none; }
 
 .nav-links {
   display: flex;
