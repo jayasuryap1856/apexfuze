@@ -1,26 +1,35 @@
 /* ============================================================
    APEX FUZE GYM — style.css
    Premium Fitness Brand Website
+   Logo: APEX (white) + bolt (deep crimson-red) + FUZE GYM (purple)
    ============================================================ */
 
 /* ===== CSS VARIABLES ===== */
 :root {
-  --bg-primary: #050505;
-  --bg-secondary: #0F0F0F;
+  /* Backgrounds — near-black with subtle cool undertone like logo circle */
+  --bg-primary: #07080A;
+  --bg-secondary: #0D0E12;
   --bg-card: rgba(255,255,255,0.04);
   --bg-card-hover: rgba(255,255,255,0.07);
   --text-primary: #FFFFFF;
   --text-secondary: rgba(255,255,255,0.65);
   --text-muted: rgba(255,255,255,0.35);
-  --accent-red: #FF3A1A;
-  --accent-orange: #FF8C00;
-  --accent-purple: #7B2FFF;
-  --grad-fire: linear-gradient(135deg, #FF3A1A 0%, #FF8C00 100%);
-  --grad-electric: linear-gradient(135deg, #FF3A1A 0%, #7B2FFF 100%);
-  --grad-purple: linear-gradient(135deg, #7B2FFF 0%, #FF3A1A 100%);
+
+  /* Logo-accurate colors */
+  --accent-red: #C8102E;
+  --accent-red-bright: #E8192C;
+  --accent-purple: #8B2FC9;
+  --accent-purple-light: #A855F7;
+
+  /* Gradients derived from logo */
+  --grad-fire: linear-gradient(135deg, #C8102E 0%, #8B2FC9 100%);
+  --grad-bolt: linear-gradient(180deg, #E8192C 0%, #8B1A1A 60%, #C8102E 100%);
+  --grad-electric: linear-gradient(135deg, #8B2FC9 0%, #C8102E 100%);
+  --grad-purple: linear-gradient(135deg, #8B2FC9 0%, #A855F7 100%);
+
   --glass-bg: rgba(255,255,255,0.04);
   --glass-border: rgba(255,255,255,0.08);
-  --glass-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  --glass-shadow: 0 8px 32px rgba(0,0,0,0.5);
   --nav-h: 72px;
   --section-pad: 100px 0;
   --radius-sm: 8px;
@@ -98,7 +107,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .splash-bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(255,58,26,0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(139,47,201,0.1) 0%, rgba(200,16,46,0.06) 50%, transparent 70%);
   animation: splashBgPulse 2s ease-in-out infinite;
 }
 
@@ -142,23 +151,23 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 
 .splash-logo-bolt { width: 44px; display: flex; align-items: center; justify-content: center; }
 .bolt-svg { width: 44px; height: 80px; }
-.bolt-poly { filter: drop-shadow(0 0 12px #FF3A1A) drop-shadow(0 0 24px #FF8C00); }
+.bolt-poly { filter: drop-shadow(0 0 12px #C8102E) drop-shadow(0 0 24px #8B2FC9); }
 
 .bolt-poly { animation: boltFlicker 0.15s ease infinite; }
 @keyframes boltFlicker {
-  0%   { opacity: 1; filter: drop-shadow(0 0 12px #FF3A1A) drop-shadow(0 0 28px #FF8C00) brightness(1); }
-  20%  { opacity: 0.7; filter: drop-shadow(0 0 4px #FF3A1A) brightness(0.6); }
-  40%  { opacity: 1; filter: drop-shadow(0 0 20px #FF8C00) drop-shadow(0 0 40px #FF3A1A) brightness(1.4); }
-  60%  { opacity: 0.85; filter: drop-shadow(0 0 8px #FF3A1A) brightness(0.9); }
-  80%  { opacity: 1; filter: drop-shadow(0 0 16px #FF8C00) brightness(1.2); }
-  100% { opacity: 1; filter: drop-shadow(0 0 12px #FF3A1A) brightness(1); }
+  0%   { opacity: 1; filter: drop-shadow(0 0 12px #C8102E) drop-shadow(0 0 28px #8B2FC9) brightness(1); }
+  20%  { opacity: 0.7; filter: drop-shadow(0 0 4px #C8102E) brightness(0.6); }
+  40%  { opacity: 1; filter: drop-shadow(0 0 20px #8B2FC9) drop-shadow(0 0 40px #C8102E) brightness(1.4); }
+  60%  { opacity: 0.85; filter: drop-shadow(0 0 8px #C8102E) brightness(0.9); }
+  80%  { opacity: 1; filter: drop-shadow(0 0 16px #8B2FC9) brightness(1.2); }
+  100% { opacity: 1; filter: drop-shadow(0 0 12px #C8102E) brightness(1); }
 }
 
 .splash-tagline {
   font-family: var(--font-display);
   font-size: 22px;
   letter-spacing: 14px;
-  color: var(--text-muted);
+  color: #8B2FC9;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -170,7 +179,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   position: absolute;
   width: 500px;
   height: 200px;
-  background: radial-gradient(ellipse at center, rgba(255,58,26,0.35) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(139,47,201,0.3) 0%, rgba(200,16,46,0.2) 50%, transparent 70%);
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -191,7 +200,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   transition: background var(--transition), box-shadow var(--transition), backdrop-filter var(--transition);
 }
 #navbar.scrolled {
-  background: rgba(5,5,5,0.92);
+  background: rgba(7,8,10,0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 1px 0 rgba(255,255,255,0.06);
@@ -216,12 +225,12 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   fill: #fff;
   letter-spacing: 2px;
 }
-.nav-logo-fuze { fill: url(#navBolt); }
+.nav-logo-fuze { fill: #8B2FC9; }
 .nav-gym-label {
   font-family: var(--font-display);
   font-size: 11px;
   letter-spacing: 6px;
-  color: var(--text-muted);
+  color: #8B2FC9;
   margin-top: 2px;
 }
 
@@ -300,7 +309,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   transform-origin: left;
   transition: transform 0.3s ease;
 }
-.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(255,58,26,0.5); }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(200,16,46,0.5); }
 .btn-primary:hover::before { transform: scaleX(1); }
 
 .btn-outline {
@@ -324,7 +333,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   border-color: var(--accent-red);
   color: var(--accent-red);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(255,58,26,0.2);
+  box-shadow: 0 8px 24px rgba(200,16,46,0.2);
 }
 
 .btn-ghost {
@@ -447,18 +456,19 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 70% at 50% 60%, rgba(255,58,26,0.07) 0%, transparent 70%),
-    linear-gradient(180deg, rgba(5,5,5,0.3) 0%, rgba(5,5,5,0.7) 60%, rgba(5,5,5,1) 100%),
+    radial-gradient(ellipse 50% 60% at 50% 40%, rgba(139,47,201,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 50% at 50% 70%, rgba(200,16,46,0.06) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(7,8,10,0.4) 0%, rgba(7,8,10,0.75) 60%, rgba(7,8,10,1) 100%),
     url('images/hero-bg.jpg') center/cover no-repeat;
-  background-color: #0a0a0a;
+  background-color: #07080A;
 }
 
 .hero-grid-lines {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255,58,26,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,58,26,0.04) 1px, transparent 1px);
+    linear-gradient(rgba(139,47,201,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139,47,201,0.05) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%);
 }
@@ -475,8 +485,8 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255,58,26,0.1);
-  border: 1px solid rgba(255,58,26,0.25);
+  background: rgba(200,16,46,0.1);
+  border: 1px solid rgba(200,16,46,0.25);
   border-radius: 99px;
   padding: 8px 20px;
   font-size: 12px;
@@ -503,7 +513,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   line-height: 1;
   letter-spacing: 2px;
   margin-bottom: 24px;
-  text-shadow: 0 0 60px rgba(255,58,26,0.2);
+  text-shadow: 0 0 60px rgba(200,16,46,0.2);
 }
 .headline-accent { color: var(--accent-red); }
 
@@ -625,7 +635,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .img-glow {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 50%, rgba(255,58,26,0.15) 100%);
+  background: linear-gradient(180deg, transparent 50%, rgba(200,16,46,0.15) 100%);
   pointer-events: none;
 }
 
@@ -640,7 +650,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   font-size: 22px;
   letter-spacing: 3px;
   color: #fff;
-  box-shadow: 0 8px 32px rgba(255,58,26,0.4);
+  box-shadow: 0 8px 32px rgba(200,16,46,0.4);
 }
 
 .about-text-block { display: flex; flex-direction: column; gap: 16px; }
@@ -663,8 +673,8 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   display: flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255,58,26,0.08);
-  border: 1px solid rgba(255,58,26,0.2);
+  background: rgba(200,16,46,0.08);
+  border: 1px solid rgba(200,16,46,0.2);
   border-radius: 99px;
   padding: 8px 16px;
   font-size: 13px;
@@ -673,7 +683,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   color: var(--text-secondary);
   transition: all var(--transition);
 }
-.pillar:hover { background: rgba(255,58,26,0.15); color: #fff; border-color: var(--accent-red); }
+.pillar:hover { background: rgba(200,16,46,0.15); color: #fff; border-color: var(--accent-red); }
 .pillar-icon { font-size: 14px; }
 
 /* ===== WHY CHOOSE US ===== */
@@ -693,7 +703,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .why-card:hover {
   transform: translateY(-8px);
   background: var(--bg-card-hover);
-  box-shadow: 0 16px 48px rgba(255,58,26,0.15);
+  box-shadow: 0 16px 48px rgba(200,16,46,0.15);
 }
 .why-icon {
   font-size: 36px;
@@ -740,7 +750,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .program-card:hover {
   transform: translateY(-6px);
   background: var(--bg-card-hover);
-  box-shadow: 0 16px 40px rgba(255,58,26,0.15);
+  box-shadow: 0 16px 40px rgba(200,16,46,0.15);
 }
 .program-card:hover::before { transform: scaleX(1); }
 
@@ -762,8 +772,8 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   text-transform: uppercase;
   padding: 4px 10px;
   border-radius: 99px;
-  background: rgba(255,58,26,0.1);
-  border: 1px solid rgba(255,58,26,0.25);
+  background: rgba(200,16,46,0.1);
+  border: 1px solid rgba(200,16,46,0.25);
   color: var(--accent-red);
 }
 
@@ -789,9 +799,9 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .pricing-card:hover { transform: translateY(-8px); }
 
 .pricing-featured {
-  border-color: rgba(255,58,26,0.4) !important;
-  background: rgba(255,58,26,0.06) !important;
-  box-shadow: 0 0 60px rgba(255,58,26,0.15), 0 8px 32px rgba(0,0,0,0.4) !important;
+  border-color: rgba(200,16,46,0.4) !important;
+  background: rgba(200,16,46,0.06) !important;
+  box-shadow: 0 0 60px rgba(200,16,46,0.15), 0 8px 32px rgba(0,0,0,0.4) !important;
   transform: scale(1.04);
 }
 .pricing-featured:hover { transform: scale(1.04) translateY(-8px); }
@@ -870,7 +880,8 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .transform-section {
   position: relative;
   background:
-    radial-gradient(ellipse 80% 60% at 50% 50%, rgba(255,58,26,0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 60% at 30% 50%, rgba(139,47,201,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 60% at 70% 50%, rgba(200,16,46,0.08) 0%, transparent 60%),
     var(--bg-primary);
   overflow: hidden;
 }
@@ -878,8 +889,8 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255,58,26,0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,58,26,0.05) 1px, transparent 1px);
+    linear-gradient(rgba(139,47,201,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139,47,201,0.04) 1px, transparent 1px);
   background-size: 80px 80px;
 }
 
@@ -903,8 +914,8 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 }
 .counter-item:hover {
   transform: translateY(-6px);
-  box-shadow: 0 16px 40px rgba(255,58,26,0.15);
-  border-color: rgba(255,58,26,0.25);
+  box-shadow: 0 16px 40px rgba(200,16,46,0.15);
+  border-color: rgba(200,16,46,0.25);
 }
 .counter-val {
   font-family: var(--font-display);
@@ -951,7 +962,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   border-radius: var(--radius-md);
   transition: all var(--transition);
 }
-.tp-item:hover { background: rgba(255,58,26,0.08); border-color: rgba(255,58,26,0.2); }
+.tp-item:hover { background: rgba(200,16,46,0.08); border-color: rgba(200,16,46,0.2); }
 .tp-icon { font-size: 28px; }
 .tp-label {
   font-family: var(--font-display);
@@ -974,7 +985,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   overflow: hidden;
   transition: transform var(--transition), box-shadow var(--transition);
 }
-.trainer-card:hover { transform: translateY(-8px); box-shadow: 0 20px 48px rgba(255,58,26,0.2); }
+.trainer-card:hover { transform: translateY(-8px); box-shadow: 0 20px 48px rgba(200,16,46,0.2); }
 
 .trainer-photo {
   position: relative;
@@ -999,7 +1010,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .trainer-img-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 40%, rgba(5,5,5,0.9) 100%);
+  background: linear-gradient(180deg, transparent 40%, rgba(7,8,10,0.9) 100%);
 }
 .trainer-info {
   padding: 20px;
@@ -1056,7 +1067,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 .gallery-hover {
   position: absolute;
   inset: 0;
-  background: rgba(255,58,26,0.7);
+  background: rgba(200,16,46,0.7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1248,7 +1259,7 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
 
 .insta-cta { text-align: center; }
 .insta-btn {
-  background: linear-gradient(135deg, #E1306C 0%, #7B2FFF 100%);
+  background: linear-gradient(135deg, #E1306C 0%, #8B2FC9 100%);
   box-shadow: 0 8px 32px rgba(225,48,108,0.3);
 }
 .insta-btn:hover { box-shadow: 0 12px 40px rgba(225,48,108,0.5); }
@@ -1290,10 +1301,10 @@ button { cursor: pointer; background: none; border: none; font: inherit; color: 
   position: relative;
 }
 .contact-map::before {
-  content: '📍 Apex fuze Gym · Ejipura, Bengaluru';
+  content: '📍 Apex Flux Gym · Ejipura, Bengaluru';
   display: block;
-  background: rgba(255,58,26,0.1);
-  border-bottom: 1px solid rgba(255,58,26,0.15);
+  background: rgba(200,16,46,0.1);
+  border-bottom: 1px solid rgba(200,16,46,0.15);
   padding: 12px 20px;
   font-size: 13px;
   font-weight: 600;
